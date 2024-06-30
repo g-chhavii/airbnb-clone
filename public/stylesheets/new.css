@@ -1,7 +1,7 @@
 .container-new{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: max-content;
+    width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.583);
     background-color: white;
     border-radius: 10px;
@@ -18,3 +18,27 @@ body{
 textarea{
     resize: none; 
 }
+
+label{
+    font-weight: 600
+}
+
+@media only screen and (max-width: 400px) {
+    .container-new{
+        padding: 1rem;
+        width: 80%;
+        font-size: smaller;
+    }
+    .form-control{
+        height:25px;
+    }
+    .btn{
+        height:30px;
+        width: 100%;
+        text-align:center ;
+    }
+    input::placeholder{
+        height:fit-content ;
+        font-size: smaller
+    }
+  }
