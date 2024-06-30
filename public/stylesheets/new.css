@@ -1,0 +1,20 @@
+.container-new{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: max-content;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.583);
+    background-color: white;
+    border-radius: 10px;
+}
+
+body{
+    
+    background-image: url('https://www.shutterstock.com/image-vector/road-trip-seamless-pattern-doodle-260nw-2196265255.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 450px right 0px;
+}
+
+textarea{
+    resize: none; 
+}

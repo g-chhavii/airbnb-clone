@@ -1,0 +1,56 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/stylesheets/nav.css">
+</head>
+<style>
+  p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+</style>
+<body>
+  <div class="container nav-bar">
+
+    <div class="nav-logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_L99Fs20TZ1RnQMcBu5nY7FghdHQfdhM9vKFdXtmMMmEpE-oc_uJM9OLZ74twNhxhq9A&usqp=CAU" alt="">
+    </div>
+
+    <div class="inner-div top-search" id="search">
+
+        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+          <input class="search-container" type="search" name="search" id="search"placeholder="Search Here">  
+        <i class="fa-solid fa-sliders slider"></i>
+      </div>
+
+  </div>
+
+
+    <div class="inner-div" id="icon-nav">
+      <ul class="icon-container">
+        <li class="icon-item active"><a href="/"><i class="fas fa-home"></i><span>Home</span></a></li>
+        <li class="icon-item"><a href="/listings/new"><i class="fas fa-heart"></i><span>Add new</span></a></li>
+        <li class="icon-item"><a href="/listings"><i class="fas fa-list"></i><span>Lists</span></a></li>
+        <% if (isAuthenticated) { %>
+          <li style="height: fit-content;">
+            <a class="btn btn-danger" href="/logout">Logout</a>
+          </li>
+        <% } else { %>
+          <li class="icon-item"><a href="/login"><i class="fas fa-user"></i><span>Login</span></a></li>
+        <% } %>
+      </ul>
+    </div>
+
+    <% if (success && success.length > 0) { %>
+      <div class=" container alert  alert-success" role="alert">
+        <h6 class="text-success"><%= success %></h6>
+      </div>
+    <% } %>
+
+    <% if (error && error.length > 0) { %>
+      <div class=" container alert alert-danger" role="alert">
+        <h6 class="text-danger"><%= error %></h6>
+      </div>
+    <% } %>
+
+  </div>
+</body>
+</html>

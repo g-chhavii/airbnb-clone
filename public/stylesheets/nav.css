@@ -1,0 +1,140 @@
+body {
+  margin: 0%;
+  padding: 0%;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.main-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.inner-div {
+  flex: 1;
+  background-color: #ffffff;
+  color: #484848;
+  font-weight: 600;
+}
+.inner-div:last-child {
+  border-bottom: none;
+}
+.top-search {
+	padding: 14px 24px 0;
+}
+
+.nav-logo img{
+  height: 100px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  font-size: 1.1rem;
+  height: 55px;
+}
+.search-container::placeholder{
+  text-align: center;
+}
+
+.search-icon {
+  padding: 1rem;
+  position: absolute;
+}
+
+.slider{
+  position: absolute;
+  top: 63px;
+  left: 85%;
+}
+
+.search-icon:hover,
+.filter-button button:hover {
+	cursor: pointer;
+	color: #FF5A5F;
+	border-color: #FF5A5F;
+}
+
+.small {
+	font-size: 14px;
+	margin: 0;
+}
+.xsmall {
+	font-size: 12px;
+	font-weight: 400;
+	margin: 0;
+}
+.icon-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  justify-content: space-evenly;
+  margin: 0 24px;
+  padding: 0;
+  list-style: none;
+  gap: 24px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.icon-container::-webkit-scrollbar {
+  display: none;
+}
+.icon-item {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.icon-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 calc((100% - 48px) / 5);
+  margin: 12px 0 10px;
+  padding: 4px 0;
+}
+.icon-item i {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.icon-item span {
+  font-size: 12px;
+}
+.icon-item a {
+  color: #484848;
+  text-decoration: none;
+	padding-bottom: 8px;
+	margin-bottom: 0;
+}
+
+.icon-item a:hover {
+  color: #767676;
+  border-bottom: 2px solid #FF5A5F;
+}
+.filter-button {
+  margin-left: auto;
+}
+.filter-button button {
+  background-color: #fff;
+  color: #484848;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+	margin: 0 10px;
+}
+.filter-button i {
+  font-size: 16px;
+}

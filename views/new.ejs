@@ -1,0 +1,90 @@
+<% layout('layouts/boilerplate') %>
+
+  <link rel="stylesheet" href="/stylesheets/new.css">
+
+  <body>
+    <div class="container-new container">
+      <form method="POST" action="/listings" class="needs-validation" novalidate>
+        <!-- enctype="multipart/form-data" -->
+        <div class="row">
+          <div class="col">
+            <label for="title" class="form-label">Enter Title</label>
+
+            <input class="form-control" id="title" name="listing[title]" placeholder="enter title" type="text"
+              required />
+
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid title.</div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col">
+            <label for="image" class="form-label">Upload Image</label>
+
+            <input class="form-control" required id="image" name="listing[image]"
+              type="text" />
+
+            <div class="invalid-feedback">Please provide a valid url.</div>
+            <div class="valid-feedback">nice!</div>
+          </div>
+
+          <div class="col">
+            <label for="price" class="form-label">Enter Price</label>
+
+            <input class="form-control" required id="price" name="listing[price]" placeholder="enter price"
+              type="number" />
+
+            <div class="invalid-feedback">Please provide price.</div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col">
+            <label for="country" class="form-label">Enter Country</label>
+
+            <input required class="form-control" id="country" name="listing[country]" placeholder="enter country"
+              type="text" />
+
+            <div class="invalid-feedback">Please provide a valid country.</div>
+
+          </div>
+
+          <div class="col">
+            <label for="location" class="form-label">Enter Location</label>
+
+            <input required class="form-control" id="location" name="listing[location]" placeholder="enter location"
+              type="text" />
+
+            <div class="invalid-feedback">Please provide a valid location.</div>
+
+          </div>
+        </div>
+
+        <br>
+
+        <div class="col">
+          <label for="description" class="form-label">Enter Description</label>
+
+          <textarea class="form-control" id="description" name="listing[description]" required
+            placeholder="enter description">
+          </textarea>
+
+          <div class="valid-feedback">Sounds Interesting!</div>
+          <div class="invalid-feedback">Please provide a valid description</div>
+        </div>
+
+        <br>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="../public/javascripts/script.js"></script>

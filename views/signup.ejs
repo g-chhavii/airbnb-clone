@@ -1,0 +1,67 @@
+<% layout('layouts/boilerplate') %>
+
+  <link rel="stylesheet" href="/stylesheets/new.css">
+
+  <body>
+    <div class="container-new container">
+      <form method="POST" action="/signup" class="needs-validation" novalidate>
+        <h4>Sign up</h4>
+        <br>
+
+        <div class="row">
+          <div class="col">
+            <label for="username" class="form-label">Enter Username</label>
+
+            <input class="form-control" id="username" name="username" placeholder="Enter username" type="text"
+              required />
+
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide a valid title.</div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col">
+            <label for="password" class="form-label">Enter password</label>
+
+            <input class="form-control" required id="password" name="password" placeholder="enter password here"
+              type="password" />
+
+            <div class="invalid-feedback">Please provide a valid password.</div>
+            <div class="valid-feedback">nice!</div>
+          </div>
+
+          <div class="col">
+            <label for="email" class="form-label">Enter email</label>
+
+            <input class="form-control" required id="email" name="email" placeholder="enter email" type="text" />
+
+            <div class="invalid-feedback">Please provide price.</div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+
+        <br>
+
+        <h6><a href="/login">Login Here</a></h6>
+
+        <br>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="../public/javascripts/script.js"></script>
